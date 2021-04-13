@@ -1,62 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
- <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
-    <script defer src="fontawesome-free-5.15.2-web/js/all.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="WebDesignPie Agency" />
+    <meta property="og:description" content="This is a capstone project that focuses on developing a website for a Web Design Agency " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fdccd4f74a.js" crossorigin="anonymous" ></script>
     <title>WebDesignPie Agency</title>
-</head>
-<body>
-    <section>
-       <nav class="navbar navbar-expand-lg nav-bar">
-        <a class="navbar-brand" href="#"><img class="log" src="img/wdp-01.png"></a>
-        <button id= "toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".main_nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse main_nav">
-            <ul class="navbar-nav nav-items">
-                <li class="nav-item " id="items"> <a class="nav-link" href="index.html">Home </a> </li>
-                <li class="nav-item" id="items"><a class="nav-link" href="about.html"> About </a></li>
-                <li class="nav-item" id="items"><a class="nav-link" href="tickets.html"> Contact</a></li>
-            </ul>
-        </div> 
-        <img id="hamburger" src="img/hamburger.svg">
-      </nav> 
-        
+  </head>
+
+  <body>
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <ul class="socials">
+            <li class="social-items">
+              <a href="#" class="nav-anchor"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="social-items">
+              <a href="#" class="nav-anchor"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="social-items">
+              <a href="#" class="nav-anchor">English</a>
+            </li>
+            <li class="social-items">
+              <a href="#" class="nav-anchor">My Page</a>
+            </li>
+            <li class="social-items">
+              <a href="#" class="nav-anchor">Signin</a>
+            </li>
+          </ul>
         </div>
-        
-        <br> <br> <br>
+      </nav>
+      <div class="main-nav-container">
+        <nav class="navbar navbar-expand-md navbar-light main-nav">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars font-weight-bolder menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand mr-auto" href="#">
+                <img
+                  src="img/wdp-logo.png"
+                  class="img-fluid w-50"
+                  alt="company-logo"
+                />
+              </a>
+              <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link mr-4 n-a-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4 n-a-link" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4 n-a-link" href="tickets.html"
+                    >Tickets</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4 n-a-link" href="#">Sponsor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4 n-a-link" href="#">News</a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-outline-danger mr-3 rounded-0 my-button"
+              >
+                WDP Event
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-    <div class="intro"><div class="banner">
-        
-    <h2>KICKSTART YOUR DIGITAL MARKETING WITH PROVEN ONLINE SERVICES</h2> 
-    <h3>A Boutique Style Agency For</h3>
-    <h1>Web Development</h1> <br>
-    
-</div>
-</div>
+    <main>
+      <section class="top-content bg-white">
+        <div class="container pt-2 pb-4">
+          <h2 class="above-title">Come and train with us!</h2>
+          <h1 class="banner text-white"> WEB DESIGN <br /> TRAINING EVENT <br /> 2022
+          </h1>
+          <div class="description p-3 w-50 mt-4">
+            <span>  A life-changing opportunity targeted at educating the youths on building websites. </span>
+          </div>
+          <div class="venue-time mt-4">
+            <h1 class="date font-weight-bolder">2022.05.11(WED) ~ 12(THU)</h1>
+            <p class="event-venue">
+              @ 7, Oriyomi Street, Computer Village, Ikeja, Lagos
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section class="main-program bg-white">
+        <h3 class="text-white pt-4">Main Program</h3>
+        <hr class="line" />
+        <div class="container">
+          <div class="programmes p-2">
+            <article class="program p1">
+              <div class="col-2 col-md-12">
+                <img
+                  src="img/icons8-start-48.png"
+                  alt="start-logo"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3 col-md-12">
+                <h2 class="p-head font-weight-bolder">Getting Started</h2>
+              </div>
+              <div class="col-7 col-md-12">
+                <small class="p-details font-weight-bolder"
+                  >Experience a simple, yet comprehensive approach to getting
+                  started with Web Design</small>
+              </div>
+            </article>
 
+            <article class="program p2">
+              <div class="col-2 col-md-12">
+                <img
+                  src="img/icons8-lecturer-50.png"
+                  alt="lecture-logo"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3 col-md-12">
+                <h2 class="p-head font-weight-bolder">Lectures</h2>
+              </div>
+              <div class="col-7 col-md-12">
+                <small class="p-details font-weight-bolder"
+                  >Come and listen to the speakers from various countries who
+                  are more experienced in Web development.</small
+                >
+              </div>
+            </article>
 
-</section>
-</body>
+            <article class="program p3">
+              <div class="col-2 col-md-12">
+                <img
+                  src="img/icons8-video-projector-50.png"
+                  alt="projector-logo"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3 col-md-12">
+                <h2 class="p-head font-weight-bolder">Live Session</h2>
+              </div>
+              <div class="col-7 col-md-12">
+                <small class="p-details font-weight-bolder"
+                  >Witness web development live practices</small
+                >
+              </div>
+            </article>
+
+            <article class="program p4">
+              <div class="col-2 col-md-12">
+                <img
+                  src="img/icons8-chat-64.png"
+                  alt="chat-logo"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3 col-md-12">
+                <h2 class="p-head font-weight-bolder">Testimony</h2>
+              </div>
+              <div class="col-7 col-md-12">
+                <small class="p-details font-weight-bolder"
+                  >Dedicated session to past beneficiaries to tell their
+                  stories, encouraging new participants.</small
+                >
+              </div>
+            </article>
+
+            <article class="program p5">
+              <div class="col-2 col-md-12">
+                <img
+                  src="img/icons8-social-network-64.png"
+                  alt="network-logo"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3 col-md-12">
+                <h2 class="p-head font-weight-bolder">Network Session</h2>
+              </div>
+              <div class="col-7 col-md-12">
+                <small class="p-details font-weight-bolder"
+                  >Come and mingle with like minds. Create a network with fellow
+                  participants and lecturers.</small
+                >
+              </div>
+            </article>
+          </div>
+          <p class="whole-under text-white pb-5">
+            <a href="#" class="text-uppercase text-decoration-none text-white"
+              >see the whole program</a
+            >
+          </p>
+          <button
+            type="button"
+            class="btn mb-5 rounded-0 d-xs-block d-md-none join-button"
+          >
+            Join WDP Event 2022
+          </button>
+        </div>
+      </section>
+
+      <section class="featured-speakers my-5">
+        <h3 class="text-black text-center font-weight-bold">
+          Featured Speakers
+        </h3>
+        <hr class="line" />
+        <div class="container my-5">
+          <div class="row mx-2">
+            <article class="col-lg-6 col-sm-12 card border-0 sp1">
+              <div class="row pb-2 mb-3">
+                <div class="col-lg-4 col-md-3 col-3 p-0 r-pos">
+                  <img
+                    src="img/andriew.jpg"
+                    class="card-img pt-3 pl-3 pb-3 i-height"
+                    alt="bonnie"
+                  />
+                </div>
+                <div class="col-lg-8 col-md-9 col-9 pl-0 pr-4">
+                  <div class="card-body m-0 p-0 pl-3">
+                    <h2 class="pb-0 mb-0">
+                      <a
+                        href="#"
+                        class="h5 text-decoration-none text-dark font-weight-bolder mb-0"
+                        >Clayburn Garrett</a
+                      >
+                    </h2>
+                    <i class="display-inline-block text-danger">
+                      <small>Senior Web Developer at Apple</small>
+                    </i>
+                    <hr class="speaker-line my-2" />
+                    <p class="card-text deep-link text-dark">
+                      <small class="text-muted">He his a Senior Web developer at Apple for over 11 years. 
+                        He his very passionate about educating young programmers who is very committed.</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-6 col-sm-12 card border-0 sp2">
+              <div class="row pb-2 mb-3">
+                <div class="col-lg-4 col-md-3 col-3 p-0 r-pos">
+                  <img
+                    src="img/soros.jpg"
+                    class="card-img pt-3 pl-3 pb-3 i-height"
+                    alt="andrew"
+                  />
+                </div>
+                <div class="col-lg-8 col-md-9 col-9 pl-0 pr-4">
+                  <div class="card-body m-0 p-0 pl-3">
+                    <h2 class="pb-0 mb-0">
+                      <a
+                        href="#"
+                        class="h5 text-decoration-none text-dark font-weight-bolder mb-0"
+                        >Andrew Krieger</a
+                      >
+                    </h2>
+                    <i class="display-inline-block text-danger">
+                      <small>Founder and CEO of ACME Web Agency</small>
+                    </i>
+                    <hr class="speaker-line my-2" />
+                    <p class="card-text deep-link text-dark">
+                      <small class="text-muted" >He has a founded ACME Web Agency for the past 15 years. 
+                        He his very passionate about educating young programmers who is very committed.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-6 col-sm-12 card border-0 sp3">
+              <div class="row pb-2 mb-3">
+                <div class="col-lg-4 col-md-3 col-3 p-0 r-pos">
+                  <img
+                    src="img/bruce.jpg"
+                    class="card-img pt-3 pl-3 pb-3 i-height"
+                    alt="bruce"
+                  />
+                </div>
+                <div class="col-lg-8 col-md-9 col-9 pl-0 pr-4">
+                  <div class="card-body m-0 p-0 pl-3">
+                    <h2 class="pb-0 mb-0">
+                      <a
+                        href="#"
+                        class="h5 text-decoration-none text-dark font-weight-bolder mb-0">Jeff Norman</a
+                      >
+                    </h2>
+                    <i class="display-inline-block text-danger">
+                      <small>Senior Software Engineer at Amazon</small>
+                    </i>
+                    <hr class="speaker-line my-2" />
+                    <p class="card-text deep-link text-dark">
+                      <small class="text-muted">He his a Senior Web developer at Amazon for over 16 years. 
+                        He his very passionate about educating young programmers who is very committed.</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-6 col-sm-12 card border-0 sp4">
+              <div class="row pb-2 mb-3">
+                <div class="col-lg-4 col-md-3 col-3 p-0 r-pos">
+                  <img
+                    src="img/jones.jpg"
+                    class="card-img pt-3 pl-3 pb-3 i-height"
+                    alt="jones"
+                  />
+                </div>
+                <div class="col-lg-8 col-md-9 col-9 pl-0 pr-4">
+                  <div class="card-body m-0 p-0 pl-3">
+                    <h2 class="pb-0 mb-0">
+                      <a
+                        href="#"
+                        class="h5 text-decoration-none text-dark font-weight-bolder mb-0"
+                        >John Williams</a
+                      >
+                    </h2>
+                    <i class="display-inline-block text-danger">
+                      <small>Founder and CEO of Room Design</small>
+                    </i>
+                    <hr class="speaker-line my-2" />
+                    <p class="card-text deep-link text-dark">
+                      <small class="text-muted"
+                        >He has a founded Room Design for the past 15 years. 
+                        He his very passionate about educating young programmers who is very committed.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-6 col-sm-12 card border-0 sp5">
+              <div class="row pb-2 mb-3">
+                <div class="col-lg-4 col-md-3 col-3 p-0 r-pos">
+                  <img
+                    src="img/urs.jpg"
+                    class="card-img pt-3 pl-3 pb-3 i-height"
+                    alt="urs"
+                  />
+                </div>
+                <div class="col-lg-8 col-md-9 col-9 pl-0 pr-4">
+                  <div class="card-body m-0 p-0 pl-3">
+                    <h2 class="pb-0 mb-0">
+                      <a
+                        href="#"
+                        class="h5 text-decoration-none text-dark font-weight-bolder mb-0"
+                        >Richard Mark</a
+                      >
+                    </h2>
+                    <i class="display-inline-block text-danger">
+                      <small>Senior Software Engineer at Facebook</small>
+                    </i>
+                    <hr class="speaker-line my-2" />
+                    <p class="card-text deep-link text-dark">
+                      <small class="text-muted"
+                        >He has been a Software Engineer at Facebook for over 15 years. 
+                        He is so committed to mentor newbies in the industry.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-6 col-sm-12 card border-0 sp6">
+              <div class="row pb-2 mb-3">
+                <div class="col-lg-4 col-md-3 col-3 p-0 r-pos">
+                  <img
+                    src="img/stanley.jpg"
+                    class="card-img pt-3 pl-3 pb-3 i-height"
+                    alt="stanley"
+                  />
+                </div>
+                <div class="col-lg-8 col-md-9 col-9 pl-0 pr-4">
+                  <div class="card-body m-0 p-0 pl-3">
+                    <h2 class="pb-0 mb-0">
+                      <a
+                        href="#"
+                        class="h5 text-decoration-none text-dark font-weight-bolder mb-0"
+                        >Stanley Druckenmiller</a
+                      >
+                    </h2>
+                    <i class="display-inline-block text-danger">
+                      <small
+                        >Tech Recruiter</small
+                      >
+                    </i>
+                    <hr class="speaker-line my-2" />
+                    <p class="card-text deep-link text-dark">
+                      <small class="text-muted"
+                        >He has over 12 years of experience in Recruiting Tech workers.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="more border p-3 text-center d-md-none d-xs-block">
+            <a href="#">
+              MORE
+              <span class="text-danger display-inline-block pl-2"
+                ><i class="fas fa-caret-down"></i
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="partners-section">
+        <h3 class="text-center py-4">Partners</h3>
+        <hr class="line" />
+        <div class="container">
+          <div class="partners p-5">
+            <div class="partner partner1">
+              <a href="#">
+                <img
+                  src="img/acme.png"
+                  alt="acme-logo"
+                  class="img-logo"
+                />
+              </a>
+            </div>
+            <div class="partner partner2">
+              <a href="#">
+                <img src="img/room.png" alt="room" class="img-logo" />
+              </a>
+            </div>
+            <div class="partner partner3">
+              <a href="#">
+                <img src="img/pixel.png" alt="pixel" class="img-logo small" />
+              </a>
+            </div>
+            <div class="partner partner4">
+              <a href="#">
+                <img src="img/jc.png" alt="jc" class="img-logo small" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container p-5">
+        <div class="main-footer d-flex align-content-center px-3">
+          <div class="items item1 px-5 align-self-center">
+            <img
+              src="img/wdp-logo.png"
+              alt="wdp-logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="items item2 flex-fill">
+            <p class="font-weight-bold">
+              2022 WebDesignPie Event. Some Rights Reserved.
+            </p>
+            <div class="sub-item">
+              <small class="d-block"
+                >This is a Capstone Project issued by
+                <a href="https://www.microverse.org/" class="whole-under"
+                  >Microverse Inc.</a
+                >, that marks the completion of HTML/CSS track of the main
+                curriculum.</small
+              >
+              <small class="last-item d-xs-none d-md-block"
+                >Appropriate credits are given to the author of the design, the
+                publisher of the contents and platforms used. This can be found
+                in
+                <a
+                  href="https://github.com/Edungit/edunnaty_design_agency"
+                  class="whole-under"
+                  >the github project page</a
+                >
+                of
+                <a href="https://github.com/edungit" class="whole-under">
+                  the developer</a
+                ></small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
