@@ -106,7 +106,7 @@ a {
   }
 
   .main-nav-container {
-    background: url('../img/Pattern-Randomized.svg') bottom !important;
+    background: url('img/Pattern-Randomized.svg') bottom !important;
     background-size: cover !important;
   }
 }
@@ -114,7 +114,7 @@ a {
 /* main section */
 
 .top-content {
-  background-image: url('../img/Pattern-Randomized.svg');
+  background-image: url('img/Pattern-Randomized.svg');
   background-size: cover;
 }
 
@@ -281,7 +281,7 @@ a {
 }
 
 .r-pos {
-  background-image: url('../img/blank.png');
+  background-image: url('img/blank.png');
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 5rem 5rem;
