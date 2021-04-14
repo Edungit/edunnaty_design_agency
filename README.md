@@ -16,7 +16,7 @@ The aim of this project is to develop a real-world-like project based on an onli
 [Live Demo Link](https://edungit.github.io/edunnaty_design_agency/)
 
 ## Getting started
-**I created a website for a Web Design Company (assumed by me). The design specifications were gotten from [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). The project consist of three(3) working pages (including home, about and tickets pages) with each page having versions for 2 different screen sizes (mobile and desktop)**
+**I created a website for a Web Design Company (assumed by me). The design specifications were gotten from [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). The project consist of three(3) working pages (including home, about and tickets pages) with each page having versions for 2 different screen sizes (mobile and desktop), a copy of this project can be accessed by clicking on [this link](https://edungit.github.io/edunnaty_design_agency/)**
 
 ## Authors
  **Author:**
