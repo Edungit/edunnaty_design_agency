@@ -31,7 +31,7 @@ Clone the project locally using  _git clone git@github.com:Edungit/edunnaty_desi
 
 ### Deployment
 
-Install and run a live server plugin on you IDE/Text editor and run it from the root directory.
+Install and run a live server plugin on your IDE/Text editor and run it from the root directory.
 
 
 
