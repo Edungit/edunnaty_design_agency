@@ -15,7 +15,9 @@ The aim of this project is to develop a real-world-like project based on an onli
 ## Live demo
 [Live Demo Link](https://edungit.github.io/edunnaty_design_agency/)
 
-## To get a local copy up and running follow these simple example steps.
+## Getting Started
+
+To get a local copy up and running follow these simple example steps:
 
 ### Setup
 
